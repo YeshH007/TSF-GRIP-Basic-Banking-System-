@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@example.com",
+    "balance": 12000.50
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "email": "jane@example.com",
+    "balance": 10000.00
+  },
+  {
+    "id": 3,
+    "name": "Bob Johnson",
+    "email": "bob@example.com",
+    "balance": 8000.75
+  },
+  {
+    "id": 4,
+    "name": "Alice Brown",
+    "email": "alice@example.com",
+    "balance": 15000.25
+  },
+  {
+    "id": 5,
+    "name": "Tom Wilson",
+    "email": "tom@example.com",
+    "balance": 9500.00
+  },
+  {
+    "id": 6,
+    "name": "Sara Lee",
+    "email": "sara@example.com",
+    "balance": 20000.50
+  },
+  {
+    "id": 7,
+    "name": "Jim Davis",
+    "email": "jim@example.com",
+    "balance": 18000.00
+  },
+  {
+    "id": 8,
+    "name": "Lisa Johnson",
+    "email": "lisa@example.com",
+    "balance": 12000.75
+  },
+  {
+    "id": 9,
+    "name": "Tim Brown",
+    "email": "tim@example.com",
+    "balance": 7000.50
+  },
+  {
+    "id": 10,
+    "name": "Kate Wilson",
+    "email": "kate@example.com",
+    "balance": 11000.25
+  }
+]

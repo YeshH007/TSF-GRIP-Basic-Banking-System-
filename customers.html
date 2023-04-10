@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">My Banking System</div>
+      <table>
+        <ul class="navitems">
+          <a href="index.html" style="text-decoration: none"><li>Home</li></a>
+          <a href="transactionhistory.html" style="text-decoration: none"
+            ><li>Transfer History</li></a
+          >
+        </ul>
+      </table>
+    </nav>
+    <main class="customercontent">
+      <div class="transactionbox">
+        <h1 id="name" style="margin: 5px">Name: Anshuman</h1>
+        <h2 id="balance" style="margin: 5px">Net Balance: Rs.20,000</h2>
+        <div class="buttons">
+          <button class="accountdetails" id="sendmoney">Send Money</button>
+          <a href="transactionhistory.html"
+            ><button class="accountdetails" id="transaction History">
+              Transaction History
+            </button></a
+          >
+        </div>
+        <div class="details">
+          <div style="margin: 5px">
+            <label for="recepname">To:</label>
+            <input
+              type="email"
+              class="field"
+              id="recepname"
+              placeholder="Receiptents's Email"
+              required
+            />
+          </div>
+          <div style="margin: 5px">
+            <label for="amount">Rs.</label>
+            <input
+              type="number"
+              name="amount"
+              class="field"
+              id="amount"
+              placeholder="Amount in Rs."
+              required
+            />
+          </div>
+          <div class="buttons">
+            <button class="accountdetails" id="send">Send</button>
+            <button class="accountdetails" id="close">Close</button>
+          </div>
+        </div>
+      </div>
+      <table class="customertable">
+        <tr>
+          <th>Customer No.</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Balance</th>
+        </tr>
+        <tr>
+          <td class="customerid">Customer No.</td>
+          <td class="customername">Name</td>
+          <td class="customeremail">Email</td>
+          <td class="customerbalance">Balance</td>
+        </tr>
+        <tr>
+          <td class="customerid">Customer No.</td>
+          <td class="customername">Name</td>
+          <td class="customeremail">Email</td>
+          <td class="customerbalance">Balance</td>
+        </tr>
+        <tr>
+          <td class="customerid">Customer No.</td>
+          <td class="customername">Name</td>
+          <td class="customeremail">Email</td>
+          <td class="customerbalance">Balance</td>
+        </tr>
+        <tr>
+          <td class="customerid">Customer No.</td>
+          <td class="customername">Name</td>
+          <td class="customeremail">Email</td>
+          <td class="customerbalance">Balance</td>
+        </tr>
+        <tr>
+          <td class="customerid">Customer No.</td>
+          <td class="customername">Name</td>
+          <td class="customeremail">Email</td>
+          <td class="customerbalance">Balance</td>
+        </tr>
+        <tr>
+          <td class="customerid">Customer No.</td>
+          <td class="customername">Name</td>
+          <td class="customeremail">Email</td>
+          <td class="customerbalance">Balance</td>
+        </tr>
+        <tr>
+          <td class="customerid">Customer No.</td>
+          <td class="customername">Name</td>
+          <td class="customeremail">Email</td>
+          <td class="customerbalance">Balance</td>
+        </tr>
+        <tr>
+          <td class="customerid">Customer No.</td>
+          <td class="customername">Name</td>
+          <td class="customeremail">Email</td>
+          <td class="customerbalance">Balance</td>
+        </tr>
+        <tr>
+          <td class="customerid">Customer No.</td>
+          <td class="customername">Name</td>
+          <td class="customeremail">Email</td>
+          <td class="customerbalance">Balance</td>
+        </tr>
+        <tr>
+          <td class="customerid">Customer No.</td>
+          <td class="customername">Name</td>
+          <td class="customeremail">Email</td>
+          <td class="customerbalance">Balance</td>
+        </tr>
+      </table>
+    </main>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

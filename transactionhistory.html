@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">My Banking System</div>
+      <table>
+        <ul class="navitems">
+          <a href="index.html" style="text-decoration: none"><li>Home</li></a>
+          <a href="customers.html" style="text-decoration: none"
+            ><li>Customer Accounts</li></a
+          >
+        </ul>
+      </table>
+    </nav>
+    <div class="transferhiscontainer">
+      <h1 style="margin: 10px">Transfer History</h1>
+      <div class="transferhiscontent"></div>
+    </div>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+      import {
+        getDatabase,
+        ref,
+        set,
+        push,
+        onValue,
+        update,
+        remove,
+      } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyBFABp4LyV0_tSKJprRZXbQYuQ-4u9z1qU",
+        authDomain: "user-auth-ba288.firebaseapp.com",
+        databaseURL:
+          "https://user-auth-ba288-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "user-auth-ba288",
+        storageBucket: "user-auth-ba288.appspot.com",
+        messagingSenderId: "568568633341",
+        appId: "1:568568633341:web:0f5745f14821ac7d682b94",
+      };
+      const app = initializeApp(firebaseConfig);
+      const database = getDatabase();
+      let transferlog = document.querySelector(".transferhiscontent");
+
+      let getit = () => {
+        return new Promise((res, rej) => {
+          onValue(ref(database, "transferlog/transferlog"), (snapshot) => {
+            let data = snapshot.val();
+            res(data);
+          });
+        });
+      };
+      getit().then((resp) => {
+        transferlog.innerHTML += resp;
+      });
+    </script>
+  </body>
+</html>
